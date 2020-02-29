@@ -66,7 +66,7 @@ use_app_insights="true"
 #the server farm id depends on the following resource id to 
 #be correctly built up. The service plan name must be correct
 #to match the service plan.
-server_farm_id="/subscriptions/${subscription_id}/resourceGroups/${bot_resource_group_name}/providers/Microsoft.Web/serverfarms/${chatbot_app_serviceplan_name}"
+server_farm_id="/subscriptions/${subscription_id}/resourceGroups/${resource_group_name}/providers/Microsoft.Web/serverfarms/${chatbot_app_serviceplan_name}"
 server_farm_location="${chatbot_location}"
 server_farm_sku="S1"
 
