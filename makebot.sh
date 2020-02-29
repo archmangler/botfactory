@@ -40,7 +40,7 @@ chatbot_application_password="xxxxxxxx"
 available_to_other_tenants="true"
 chatbot_application_language="CSharp"
 chatbot_arm_template_file="templates/template.json"
-chatbot_location="West US"
+chatbot_location="westus"
 qnaservice_startup_delay="10"
 qnamaker_search_service_name="${chatbot_application_name}-search"
 qnamaker_search_service_sku="Standard"
@@ -458,9 +458,9 @@ function create_chat_bot_arm () {
   sku="${chatbot_sku}" \
   appInsightsLocation="\"${app_insights_location}\"" \
   useAppInsights="${use_app_insights}" \
-  location="\"${chatbot_location}\"" \
+  location="${chatbot_location}" \
   serverFarmId="${server_farm_id}" \
-  serverFarmLocation="\"${server_farm_location}\"" \
+  serverFarmLocation="${server_farm_location}" \
   --name "${chatbot_bot_name}-deployment"
 
  echo "================= Created bot from ARM template  ===================="
