@@ -456,11 +456,11 @@ function create_chat_bot_arm () {
   siteName="${chatbot_application_name}-webapp" \
   botId="${chatbot_application_name}-bot" \
   sku="${chatbot_sku}" \
-  appInsightsLocation="${app_insights_location}" \
+  appInsightsLocation="\"${app_insights_location}\"" \
   useAppInsights="${use_app_insights}" \
-  location="${chatbot_location}" \
+  location="\"${chatbot_location}\"" \
   serverFarmId="${server_farm_id}" \
-  serverFarmLocation="${server_farm_location}" \
+  serverFarmLocation="\"${server_farm_location}\"" \
   --name "${chatbot_bot_name}-deployment"
 
  echo "================= Created bot from ARM template  ===================="
