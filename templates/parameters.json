@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "QnAKnowledgebaseId": {
+            "value": ""
+        },
+        "QnAAuthKey": {
+            "value": ""
+        },
+        "QnAEndpointHostName": {
+            "value": ""
+        },
+        "botEnv": {
+            "value": "prod"
+        },
+        "botId": {
+            "value": ""
+        },
+        "location": {
+            "value": ""
+        },
+        "sku": {
+            "value": ""
+        },
+        "kind": {
+            "value": "sdk"
+        },
+        "siteName": {
+            "value": "ubot-webapp"
+        },
+        "createNewStorage": {
+            "value": true
+        },
+        "storageAccountName": {
+            "value": "ubotwebappbota298"
+        },
+        "storageAccountLocation": {
+            "value": ""
+        },
+        "storageAccountResourceId": {
+            "value": ""
+        },
+        "appId": {
+            "value": ""
+        },
+        "appSecret": {
+            "value": ""
+        },
+        "azureWebJobsBotFrameworkDirectLineSecret": {
+            "value": ""
+        },
+        "zipUrl": {
+            "value": "https://bot-framework.azureedge.net/static/105378-966cdd2eb5/bot-packages/v1.3.27-97095/csharp-abs-webapp-v4_qnabot_precompiled.zip"
+        },
+        "proactiveZipUrl": {
+            "value": ""
+        },
+        "useAppInsights": {
+            "value": false
+        },
+        "appInsightsLocation": {
+            "value": "West US"
+        },
+        "serverFarmId": {
+            "value": "blank"
+        },
+        "createServerFarm": {
+            "value": false
+        },
+        "serverFarmLocation": {
+            "value": "West US"
+        },
+        "serverFarmSku": {
+            "value": {
+                "name": "S1",
+                "tier": "Standard",
+                "size": "S1",
+                "family": "S",
+                "capacity": 1
+            }
+        },
+        "endpoint": {
+            "value": ""
+        },
+        "luisApiLocation": {
+            "value": "Global"
+        },
+        "botQueueName": {
+            "value": "bot-queue"
+        }
+    }
+}
